@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>peliculas</title>
+    
+
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="scripts/jsExamen.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    
+</head>
+<body>
+<div class="container" style="background-color: #e2b111;">
+    <nav class="navbar navbar-inverse bg-inverse">
+        <img src="images/robot.jpg" width="90" height="90" class="d-inline-bock-top" alt="">
+       <b> Star Wars</b>
+</nav>
+</div>
+
+
+    <div class="container" style="background-color:rgb(7, 90, 18);">
+        <div class="row content-Peliculas">
+        </div>
+
+
+     </div>
+
+     <div class="container " style="background-color:rgb(240, 64, 40);">
+        <div class=" row content-divDetallesPelicula">
+            
+            <div class="col-12"><b> Titulo </b></div>
+            <div class="col-4"> <b>Director</b></div>
+            <div class="col-8"> .....</div>
+            <div class="col-6"> <b>año de lanzamiento</b></div>
+            <div class="col-3"> .... </div>
+            <div class="col-4">
+                <p class="Encabezado">Naves</p>
+                <ul>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                </ul>
+            </div>
+            <div class="col-4  ">
+                <p class="Encabezado">Personas</p>
+                <ul>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <p class="Encabezado">Plantas</p>
+                <ul>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                    <li class="elemento">nav1</li>
+                </ul>
+            </div>
+       </div>
+    </div>
+    
+    <div class="container " style="background-color:rgb(0, 162, 255);">
+        <div class="row content-Peliculasplanets">
+
+
+        
+    </div>
+</div>
+    
+   
+
+<div class=" style= "background-color:rgb(14, 9, 7);>
+    <div class="container">
+    <footer class="text-center text-white fixed-bottom">
+        <!-- Grid container -->
+        <div class="container p-4"></div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-12" style="background-color: rgba(0, 0, 0, 0.2);">
+         <b> © jessica Gonzalez Lopez:</b>
+          <a class="text-white" href="https://swapi.dev"> <b>swapi.dev</b></a>
+        </div>
+        
+        <!-- Copyright -->
+      </footer>
+   </div> 
+   
+</div>
+
+
+
+
+<div class="container " style="background-color:rgb(76, 112, 8);">
+    <h3> Datos Personales</h3>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  
+        <label for="name"> Nombre: </label>
+        <input id="name" type="text" formControlName="name">
+        <app-messages-error [input]="name"></app-messages-error>
+        <br/>    
+      
+        <label for="name"> Apellido: </label>
+        <input id="name" type="text" formControlName="name">
+        <app-messages-error [input]="name"></app-messages-error>
+        <br/>    
+        <label for="year"> años: </label>
+        <input id="year" type="number" formControlName="year">
+        <app-messages-error [input]="year"></app-messages-error>
+        <br/>
+        
+      
+    
+        <button type="submit" [disabled]="productForm.invalid" >Submit</button>
+      
+      </form>
+    </form>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+.table-body,
+.Conte-Peli{
+    background-color: #fff;
+   
+    font-size: 12pt;
+    background-color: #439595;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.Encabezado
+{
+    text-align: center;
+    font-size: 16pt;
+    background-color: #439595;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.elemento{
+    list-style: none;
+}
+
+.Encabezados
+{
+    text-align: center;
+}
